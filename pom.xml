@@ -9,13 +9,6 @@
 
   <artifactId>checkmarx-collector</artifactId>
 
-  <parent>
-    <groupId>com.capitalone.dashboard</groupId>
-    <artifactId>Hygieia</artifactId>
-    <version>2.0.5-SNAPSHOT</version>
-    <relativePath>../../..</relativePath>
-  </parent>
-
   <distributionManagement>
     <snapshotRepository>
       <id>ossrh</id>
@@ -65,9 +58,6 @@
           <execution>
             <id>report</id>
             <phase>verify</phase>
-            <goals>
-              <goal>report</goal>
-            </goals>
           </execution>
         </executions>
       </plugin>
@@ -94,7 +84,7 @@
     <dependency>
       <groupId>com.capitalone.dashboard</groupId>
       <artifactId>core</artifactId>
-      <version>${project.version}</version>
+      <version>3.9.8</version>
     </dependency>
     <dependency>
 	      <groupId>joda-time</groupId>
